@@ -175,18 +175,34 @@
 						  <ol class="carousel-indicators">
 						    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 						    <li data-target="#myCarousel" data-slide-to="1"></li>
+						    <li data-target="#myCarousel" data-slide-to="2"></li>
+						    <li data-target="#myCarousel" data-slide-to="3"></li>
+						    <li data-target="#myCarousel" data-slide-to="4"></li>
 						  </ol>
 
 						  <!-- Wrapper for slides -->
 						  <div class="carousel-inner">
 						    
 						    <div class="item active">
-						    <g:link class="list" action="index" controller="book"><asset:image src="pixel2-banner-1.png"/></g:link>
+						    <asset:image src="pixel1.png"/>
 						    </div>
 						    
 						    <div class="item">
-						    <g:link class="list" action="index" controller="book"><asset:image src="pixel2-banner-2.png"/></g:link>
+						    <asset:image src="pixel2-banner-1.png"/>
 						    </div>
+						    
+						    <div class="item">
+						    <asset:image src="pixel2.png"/>
+						    </div>
+						    
+						    <div class="item">
+						    <asset:image src="pixel2-banner-2.png"/>
+						    </div>
+						    
+						    <div class="item">
+						    <asset:image src="pixel3.png"/>
+						    </div>
+						    
 						      
 						  </div>
 
