@@ -23,4 +23,6 @@ target-eclipse
 /grails-app/assets/PRODUCTS*
 logs/
 .asscache
+../.project
+../.settings/
 
