@@ -1,12 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<meta name="description" content="Pixel 2.0 - Discover Distinct Multiverses... and NFTs" />
+		<meta name="description" content="Pixel 2.0 - Discovery & Distinction Engine" />
 <meta name="keywords" content="multiverses, pixel, distinction, distinction service, discover, Books, Publish, Marketing, pdf, text, images, image, video, photo, distribute, distribution, Garments, Art, Clothing, Jewelry, startup, online store, entrepreneur" />
 <meta http-equiv="window-target" content="_top" />
 <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="PUBLIC">
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-	<title>Pixel 2.0 - Discover Distinct Multiverses... and NFTs</title>
+	<title>Pixel 2.0 - Discovery & Distinction Engine</title>
 	<asset:stylesheet src="skel-noscript.css"/>
 	<asset:stylesheet src="style.css"/>
 	<asset:stylesheet src="style-desktop.css"/>
@@ -42,6 +42,12 @@
 		  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 		  <link rel="stylesheet" href="/resources/demos/style.css">
 				  <style>
+				  #draggable { width: 150px; height: 150px; padding: 0.5em; }
+				  #draggable1 { width: 150px; height: 150px; padding: 0.5em; }
+				  #draggable3 { width: 150px; height: 150px; padding: 0.5em; }
+				  #droppable { width: 300px; height: 300px; padding: 0.5em; float: left; margin: 10px; }
+				  #droppable1 { width: 300px; height: 300px; padding: 0.5em; float: left; margin: 10px; }
+				  #droppable2 { width: 300px; height: 300px; padding: 0.5em; float: left; margin: 10px; }
 		  #accordion-resizer {
 		  	margin-left: 80px;
 		    margin-right: 80px;
@@ -108,6 +114,43 @@
 		  $( function() {
 			    $( "#tabs" ).tabs();
 			  } );
+			  
+			$( function() {
+    			$( "#draggable" ).draggable();
+    			$( "#droppable" ).droppable({
+			      drop: function( event, ui ) {
+			        $( this )
+			          .addClass( "ui-state-highlight" )
+			          .find( "p" )
+			            .html( "Coins Collected!" );
+			      }
+			    });
+  			} );  
+  			
+  			$( function() {
+    			$( "#draggable1" ).draggable();
+    			$( "#droppable1" ).droppable({
+			      drop: function( event, ui ) {
+			        $( this )
+			          .addClass( "ui-state-highlight" )
+			          .find( "p" )
+			            .html( "Coins Collected!" );
+			      }
+			    });
+  			} );
+  			
+  			$( function() {
+    			$( "#draggable2" ).draggable();
+    			$( "#droppable2" ).droppable({
+			      drop: function( event, ui ) {
+			        $( this )
+			          .addClass( "ui-state-highlight" )
+			          .find( "p" )
+			            .html( "Coins Collected!" );
+			      }
+			    });
+  			} );
+  			
 		  </script>
 		  <style>
 		  .ui-menu { width: 910px; }
@@ -167,59 +210,6 @@
 			<div id="header-wrapper">
 				<div class="container">
 					
-					<div class="row">
-						<div class="12u">
-						<section id="banner">
-						<div id="myCarousel" class="carousel slide" data-ride="carousel">
-						  <!-- Indicators -->
-						  <ol class="carousel-indicators">
-						    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						    <li data-target="#myCarousel" data-slide-to="1"></li>
-						    <li data-target="#myCarousel" data-slide-to="2"></li>
-						    <li data-target="#myCarousel" data-slide-to="3"></li>
-						    <li data-target="#myCarousel" data-slide-to="4"></li>
-						  </ol>
-
-						  <!-- Wrapper for slides -->
-						  <div class="carousel-inner">
-						    
-						    <div class="item active">
-						    <asset:image src="pixel1.png"/>
-						    </div>
-						    
-						    <div class="item">
-						    <asset:image src="pixel2-banner-1.png"/>
-						    </div>
-						    
-						    <div class="item">
-						    <asset:image src="pixel2.png"/>
-						    </div>
-						    
-						    <div class="item">
-						    <asset:image src="pixel2-banner-2.png"/>
-						    </div>
-						    
-						    <div class="item">
-						    <asset:image src="pixel3.png"/>
-						    </div>
-						    
-						      
-						  </div>
-
-						  <!-- Left and right controls -->
-						  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-						    <span class="glyphicon glyphicon-chevron-left"></span>
-						    <span class="sr-only">Previous</span>
-						  </a>
-						  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-						    <span class="glyphicon glyphicon-chevron-right"></span>
-						    <span class="sr-only">Next</span>
-						  </a>
-						</div>
-						</section>
-						</div>
-					</div>
-					
 					
 								<!-- Nav -->
 								<!--
@@ -240,8 +230,38 @@
 						<div class="12u">
 						
 								<section>
-								<div style="font-size:150px;">PIXEL 2.0 MULTIVERSES ... WITH NFTS. COMING SOON!!
+								<div id="draggable">
+								  <asset:image src="pixel-robot-1.png" width="100" height="100"/>
 								</div>
+								<div id="droppable" class="ui-widget-header">
+								  <p>Monkey Coin</p>
+								  <asset:image src="garbage.gif"/>
+								</div>
+								<span style="font-size:100px;">
+								Pixel 2.0: Move The Robots, collect some crypto coins.
+								</span>
+								<div id="draggable1">
+								  <asset:image src="pixel-robot-2.png" width="100" height="100"/>
+								</div>
+								<div id="droppable1" class="ui-widget-header">
+								<p>AZ Coin</p>
+								  <asset:image src="crypto.gif"/>
+								</div>
+								<span style="font-size:100px;">
+								Discover ...
+								</span>
+								
+								<div id="draggable2">
+								  <asset:image src="pixel-robot-3.png" width="100" height="100"/>
+								</div>
+								<div id="droppable2" class="ui-widget-header">
+								<p>Pixel Coin</p>
+								  <asset:image src="nft.gif"/>
+								</div>
+								<span style="font-size:100px;">
+								Distinguish ...
+								</span>
+								
 								</section>
 
 
@@ -308,7 +328,6 @@
 			</div-->
 
 		<!-- Footer Wrapper -->
-		<g:render template="/footer" />
-
+		
 	</body>
 </html>
