@@ -45,7 +45,7 @@
 				  #draggable { width: 150px; height: 150px; padding: 0.5em; }
 				  #draggable1 { width: 150px; height: 150px; padding: 0.5em; }
 				  #draggable3 { width: 150px; height: 150px; padding: 0.5em; }
-				  #droppable { width: 600px; height: 900px; padding: 0.5em; float: left; margin: 10px; }
+				  #droppable { width: 700px; height: 700px; padding: 0.5em; float: left; margin: 10px; }
 				  #droppable1 { width: 300px; height: 300px; padding: 0.5em; float: left; margin: 10px; }
 				  #droppable2 { width: 300px; height: 300px; padding: 0.5em; float: left; margin: 10px; }
 		  #accordion-resizer {
@@ -85,6 +85,12 @@
 		p:hover {
 		  background-color: black;
 		}
+		
+		#feedback { font-size: 3em; }
+		  #selectable .ui-selecting { background: #FECA40; }
+		  #selectable .ui-selected { background: #F39814; color: white; }
+		  #selectable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+		  #selectable li { margin: 3px; padding: 0.4em; font-size: 3em; height: 50px; }
 		  </style>
 		  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   			<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
@@ -154,6 +160,10 @@
   			$( function() {
 			    $( "#salutation" ).selectmenu();
 			  } );
+			  
+			  $( function() {
+			    $( "#selectable" ).selectable();
+			  } );
 		  </script>
 		  <style>
 		  .ui-menu { width: 910px; }
@@ -218,7 +228,7 @@
 								
 										<nav id="nav">
 											<ul>
-												<li><button class="button" style="font-size:65px;">Pixel 2.0 -- <g:link controller="product" action="model4"><span style="color:#feff00">WEB3 NFT Mind Model 4 >></span></g:link></span></button></li>
+												<li><button class="button" style="font-size:65px;">Pixel 2.0 -- <g:link controller="product" action="a"><span style="color:#feff00">WEB3 NFT Mind Model 5 >></span></g:link></span></button></li>
 												<br><br>
 												 
 												
@@ -231,41 +241,33 @@
 						
 								<section>
 								<br><br>
-								<div class="demo">
+								<div class="demo" style="font-size:50px;">
+								Hold CTRL key to select multiple secondary layers.
  
-									<form action="#">
-									 
-									  <fieldset style="font-size:40px;">
-									  
-									  <label for="salutation">Select a Primary Skill</label>
-									    <select name="salutation" id="salutation">
-									      <option disabled selected>Please pick one</option>
-									      <option>Wealth</option>
-									      <option>Fame</option>
-									      <option>Marriage</option>
-									      <option>Health</option>
-									      <option>Fortune</option>
-									      <option>Children</option>
-									      <option>Wisdom</option>
-									      <option>Career</option>
-									      <option>Help</option>
-									    </select>
-									  </fieldset>
-									 
-									</form>
+									<ol id="selectable">
+									  <li class="ui-widget-content" style="font-size:30px;">Wealth</li>
+									  <li class="ui-widget-content" style="font-size:30px;">Fame</li>
+									  <li class="ui-widget-content" style="font-size:30px;">Marriage</li>
+									  <li class="ui-widget-content" style="font-size:30px;">Health</li>
+									  <li class="ui-widget-content" style="font-size:30px;">Fortune</li>
+									  <li class="ui-widget-content" style="font-size:30px;">Children</li>
+									  <li class="ui-widget-content" style="font-size:30px;">Wisdom</li>
+									  <li class="ui-widget-content" style="font-size:30px;">Career</li>
+									  <li class="ui-widget-content" style="font-size:30px;">Help</li>
+									</ol>
 									 
 									</div>
 									  
 									  
 								<div id="draggable">
-								  <asset:image src="pixel-robot-1.png" width="200" height="200"/>
+								  <asset:image src="pixel-robot-3.png" width="200" height="200"/>
 								</div>
 								<div id="droppable" class="ui-widget-header">
-								  <p>Select Characteristics for your Robot.</p>
-								  <asset:image src="bagua.gif"/>
+								  <p>Select Second Layer Characteristics for your Robot.</p>
+								  <asset:image src="feng-shui.gif"/>
 								</div>
 								<span style="font-size:100px;">
-								Pixel 2.0: Select your primary skill.
+								Pixel 2.0: Select your secondary skill (another layer).
 								</span>
 								</section>
 
