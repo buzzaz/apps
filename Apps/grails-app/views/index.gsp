@@ -212,26 +212,23 @@
 					
 					
 								<!-- Nav -->
-								<!--
+								
 										<nav id="nav">
 											<ul>
-												<li><button class="button"><span style="color:#ffffff"><g:link controller="blogCategory" action="index"><span style="color:#feff00">Categories</span></g:link></span></button></li>
-												<li><button class="button"><span style="color:#ffffff"><g:link controller="chapter" action="index"><span style="color:#feff00">Chapters</span></g:link></span></button></li>
-												<li><button class="button"><span style="color:#ffffff"><g:link controller="product" action="shelf"><span style="color:#feff00">Dashboard</span></g:link></span></button></li>
+												<li><button class="button" style="font-size:65px;">Pixel 2.0 -- <g:link controller="product" action="model2"><span style="color:#feff00">WEB3 NFT Mind Model 2 >></span></g:link></span></button></li>
 												<br><br>
 												 
 												
 											
 											</ul>
 										</nav>
-										-->
 														<!-- Intro -->
 							<div class="row">
 						<div class="12u">
 						
 								<section>
 								<div id="draggable">
-								  <asset:image src="pixel-robot-1.png" width="100" height="100"/>
+								  <asset:image src="pixel-robot-1.png" width="200" height="200"/>
 								</div>
 								<div id="droppable" class="ui-widget-header">
 								  <p>Monkey Coin</p>
@@ -241,25 +238,25 @@
 								Pixel 2.0: Move The Robots, collect some crypto coins.
 								</span>
 								<div id="draggable1">
-								  <asset:image src="pixel-robot-2.png" width="100" height="100"/>
+								  <asset:image src="pixel-robot-2.png" width="200" height="200"/>
 								</div>
 								<div id="droppable1" class="ui-widget-header">
 								<p>AZ Coin</p>
 								  <asset:image src="crypto.gif"/>
 								</div>
 								<span style="font-size:100px;">
-								Discover ...
+								Discover and Position
 								</span>
 								
 								<div id="draggable2">
-								  <asset:image src="pixel-robot-3.png" width="100" height="100"/>
+								  <asset:image src="pixel-robot-3.png" width="200" height="200"/>
 								</div>
 								<div id="droppable2" class="ui-widget-header">
 								<p>Pixel Coin</p>
 								  <asset:image src="nft.gif"/>
 								</div>
 								<span style="font-size:100px;">
-								Distinguish ...
+								Distinguish and Drop
 								</span>
 								
 								</section>

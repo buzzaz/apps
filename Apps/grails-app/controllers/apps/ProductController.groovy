@@ -6,7 +6,7 @@ import twitter4j.*
 import twitter4j.auth.*
 
 import grails.plugin.springsecurity.annotation.Secured
-@Secured('ROLE_ADMIN')
+@Secured('ROLE_ANONYMOUS')
 
 class ProductController {
 
@@ -169,6 +169,11 @@ class ProductController {
 	def a() {
 		System.out.println("inside a")
 		log.info "inside a"
+	}
+	
+	def model2() {
+		System.out.println("inside model2")
+		log.info "inside model2"
 	}
 	
 	def b() {
