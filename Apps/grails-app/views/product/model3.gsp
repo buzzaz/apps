@@ -45,7 +45,7 @@
 				  #draggable { width: 150px; height: 150px; padding: 0.5em; }
 				  #draggable1 { width: 150px; height: 150px; padding: 0.5em; }
 				  #draggable3 { width: 150px; height: 150px; padding: 0.5em; }
-				  #droppable { width: 600px; height: 600px; padding: 0.5em; float: left; margin: 10px; }
+				  #droppable { width: 600px; height: 900px; padding: 0.5em; float: left; margin: 10px; }
 				  #droppable1 { width: 300px; height: 300px; padding: 0.5em; float: left; margin: 10px; }
 				  #droppable2 { width: 300px; height: 300px; padding: 0.5em; float: left; margin: 10px; }
 		  #accordion-resizer {
@@ -152,7 +152,7 @@
   			} );
   			
   			$( function() {
-			    $( "#resizable" ).resizable();
+			    $( "#salutation" ).selectmenu();
 			  } );
 		  </script>
 		  <style>
@@ -218,7 +218,7 @@
 								
 										<nav id="nav">
 											<ul>
-												<li><button class="button" style="font-size:65px;">Pixel 2.0 -- <g:link controller="product" action="model3"><span style="color:#feff00">WEB3 NFT Mind Model 3 >></span></g:link></span></button></li>
+												<li><button class="button" style="font-size:65px;">Pixel 2.0 -- <g:link controller="product" action="a"><span style="color:#feff00">WEB3 NFT Mind Model 4 >></span></g:link></span></button></li>
 												<br><br>
 												 
 												
@@ -230,21 +230,42 @@
 						<div class="12u">
 						
 								<section>
-								
-								<div id="resizable" class="ui-widget-content" style="font-size:40px;">
-								  <h3 class="ui-widget-header" style="font-size:60px;">Resize the frame - Add points to your Robot!</h3>
-								  By doing the tasks asked in the Pixel 2.0 WEB3 NFT Mind Model flow - Gain crypto and upgrade your character!!
-								</div>
-
+								<br><br>
+								<div class="demo">
+ 
+									<form action="#">
+									 
+									  <fieldset style="font-size:40px;">
+									  
+									  <label for="salutation">Select a Primary Skill</label>
+									    <select name="salutation" id="salutation">
+									      <option disabled selected>Please pick one</option>
+									      <option>Wealth</option>
+									      <option>Fame</option>
+									      <option>Marriage</option>
+									      <option>Health</option>
+									      <option>Fortune</option>
+									      <option>Children</option>
+									      <option>Wisdom</option>
+									      <option>Career</option>
+									      <option>Help</option>
+									    </select>
+									  </fieldset>
+									 
+									</form>
+									 
+									</div>
+									  
+									  
 								<div id="draggable">
-								  <asset:image src="pixel-robot-2.png" width="200" height="200"/>
+								  <asset:image src="pixel-robot-1.png" width="200" height="200"/>
 								</div>
 								<div id="droppable" class="ui-widget-header">
-								  <p>Upgrade your character by moving the Robot here.</p>
-								  <asset:image src="map.gif"/>
+								  <p>Select Characteristics for your Robot.</p>
+								  <asset:image src="bagua.gif"/>
 								</div>
 								<span style="font-size:100px;">
-								Pixel 2.0: Move The Robot, upgrade your character.
+								Pixel 2.0: Select your primary skill.
 								</span>
 								</section>
 
