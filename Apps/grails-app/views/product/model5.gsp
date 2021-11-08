@@ -1,6 +1,6 @@
 <html>
 <title>
-SimpleImage JavaScript 
+Pixel 2.0 API 
 </title>
 <head>
 <style>
