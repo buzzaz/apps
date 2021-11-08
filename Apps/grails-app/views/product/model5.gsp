@@ -5,10 +5,10 @@ SimpleImage JavaScript
 <head>
 <style>
 body{
-  background-color: #FAE5D3;
+  background-color: #ccece9;
   color: #1F618D;
   font-family: calibri;
-  margin: 20%
+  margin: 4%
 }
 .mainHeaderH1{
   color: #7B241C;
@@ -222,7 +222,7 @@ function imageToGrayScale(elem){
 <body>
 
 <ul>
-												<li><button class="button" style="font-size:65px;">Pixel 2.0 -- <g:link controller="product" action="model6"><span style="color:#feff00">WEB3 NFT Mind Model 6 >></span></g:link></span></button></li>
+												<li><button class="button" style="font-size:65px;">Pixel 2.0 -- <g:link controller="product" action="model6"><span style="color:#D23B2A">WEB3 NFT Mind Model 6 >></span></g:link></span></button></li>
 												<br><br>
 												 
 												

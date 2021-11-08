@@ -306,8 +306,8 @@ function drawDiagonalColorsSquare(elem){
     var x = pix.getX();
     var y = pix.getY();
     if(x >= Math.floor(width/height)){
-      pix.setRed(255);
-      pix.setGreen(0);
+      pix.setRed(0);
+      pix.setGreen(255);
       pix.setBlue(0); 
     }else{
       pix.setRed(0);
