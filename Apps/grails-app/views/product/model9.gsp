@@ -74,6 +74,16 @@
 		  border-radius: 15px;
 		  box-shadow: 0 9px #78789b;
 		}
+		
+		.card {
+        width: 300px;
+        height: 300px;
+        background-color: #000000;
+        display: inline-block;
+	    }
+	    .card:hover {
+	        background-color: #ffffff;
+	    }
 
 		.button:hover {background-color: #000000}
 		
@@ -83,7 +93,7 @@
 		  transform: translateY(4px);
 		}
 		p:hover {
-		  background-color: black;
+		  background-color: grey;
 		}
 		
 		#feedback { font-size: 3em; }
@@ -194,7 +204,7 @@ body{
   box-shadow: 2px 2px #ABB2B9;
   padding: 3px; 
   width: 300px;
-  height: 150px; 
+  height: 300px; 
 }
 
 </style>
@@ -306,8 +316,8 @@ function drawDiagonalColorsSquare(elem){
     var x = pix.getX();
     var y = pix.getY();
     if(x >= Math.floor(width/height)){
-      pix.setRed(255);
-      pix.setGreen(0);
+      pix.setRed(0);
+      pix.setGreen(255);
       pix.setBlue(0); 
     }else{
       pix.setRed(0);
@@ -327,22 +337,58 @@ function createBelgianFlag(elem){
   var bar2 = bar1 * 2
   console.log(width,height,bar1,bar2);
   for (var pix of img.values()){
-    if(pix.getX() <= bar1){
-      pix.setRed(0);
-      pix.setGreen(0);
-      pix.setBlue(0);
-    }else if(pix.getX() > bar1 && pix.getX() <= bar2){
-      pix.setRed(250);
-      pix.setGreen(250);
-      pix.setBlue(0);
-    }else{
-      pix.setRed(255);
-      pix.setGreen(20);
-      pix.setBlue(20);
-    }
+    
+	var x = pix.getX();
+	var y = pix.getY();
+	if(x<img.getWidth()/2){
+		pix.setBlue(255);
+		
+		if (y<img.getHeight()/2) {
+			pix.setRed(127);
+		}
+		
+		
+	} else {
+		if(y<img.getHeight()/2){
+			pix.setGreen(255);
+		}
+	}
   }
   img.drawTo(canvas);
 }
+
+function createBelgianFlag2(elem){
+
+
+  var canvas = document.getElementById(elem);
+  var width = canvas.width;
+  var height = canvas.height;
+  var img = new SimpleImage(width,height);
+  var ctx = canvas.getContext('2d');
+  var bar1 = Math.round(width/3)
+  var bar2 = bar1 * 2
+  console.log(width,height,bar1,bar2);
+  for (var pix of img.values()){
+    
+	var x = pix.getX();
+	var y = pix.getY();
+	if(x<img.getWidth()/2){
+		pix.setRed(127);
+		
+		if (y<img.getHeight()/2) {
+			pix.setBlue(255);
+		}
+		
+		
+	} else {
+		if(y<img.getHeight()/2){
+			pix.setGreen(255);
+		}
+	}
+  }
+  img.drawTo(canvas);
+}
+
 function clearCanvas(canvas) {
   var element = document.getElementById(canvas);
   var ctx = element.getContext('2d');
@@ -439,37 +485,34 @@ function imageToGrayScale(elem){
 			<div>
 				<div>
 					
-					
+					<div>
 								<!-- Nav -->
 								
 										<nav id="nav">
 											<ul>
-												<li><button class="button" style="font-size:65px;">Pixel 2.0 -- <g:link controller="product" action="model7"><span style="color:#feff00">WEB3 NFT Mind Model 7 >></span></g:link></span></button></li>
-												<li><button class="button" style="font-size:65px;"><g:link controller="product" action="model5"><span style="color:#feff00"><< WEB3 NFT Mind Model 5</span></g:link></span></button></li>
-												 
+												<li><button class="button" style="font-size:65px;">Pixel 2.0 -- <g:link controller="product" action="a"><span style="color:#feff00">WEB3 NFT Mind Model 10 >></span></g:link></span></button></li>
+												<li><button class="button" style="font-size:65px;"><g:link controller="product" action="model8"><span style="color:#feff00"><< WEB3 NFT Mind Model 8</span></g:link></span></button></li>
+												
 												
 											
 											</ul>
 										</nav>
+										</div>
 														<!-- Intro -->
 							<div class="row">
 						<div class="12u">
-						<br><br><br><br>
+						<br><br>
+						<br><br>
 								<section>
 								<br><br>
-								<div class="demo" style="font-size:50px;">
-								Pixel 2.0 Application Programming Interface
+								<div class="demo" style="font-size:24px;">
+								Quadrants Programming Interface - Palette Testing - Nerve Optic and Sound
  
-									<p>Draw a Flag, Pixel.</p>
-									<canvas id='canvasBelgianFlag' class='canvasRoundCorders'></canvas>
-									<input id='buttonCreateBelgianFlag' type='button' value='Drawing a flag ...' onclick="createBelgianFlag('canvasBelgianFlag')">
+									<p>There are 4 quadrants. One is full, circle, triangle or square. The goal is to eventually be full. But for now, Choose One (circle, triangle or square):</p>
+									<input id='buttonCreateBelgianFlag' type='button' value='Draw Quadrants ...' onclick="createBelgianFlag('canvasBelgianFlag')">
 									
-									<p>Diagonal on Rectangle</p>
-									<canvas id='canvasDiagonalColorSquare' class='canvasRoundCorders'></canvas>
-									<input id='buttonDiagColSquare' type='button' value='Create Square' onclick="drawDiagonalColorsSquare('canvasDiagonalColorSquare')">
+									<p><canvas id='canvasBelgianFlag' class='canvasRoundCorders,card' onclick="createBelgianFlag2('canvasBelgianFlag')"></canvas></p>
 									
-									<hr>
-
 									 
 									</div>
 									  

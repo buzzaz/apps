@@ -218,8 +218,8 @@
 								
 										<nav id="nav">
 											<ul>
-												<li><button class="button" style="font-size:65px;">Pixel 2.0 -- <g:link controller="product" action="model3"><span style="color:#feff00">WEB3 NFT Mind Model 3 >></span></g:link></span></button></li>
-												<br><br>
+												<li><button class="button" style="font-size:40px;">Pixel 2.0 -- <g:link controller="product" action="model3"><span style="color:#feff00">WEB3 NFT Mind Model 3 >></span></g:link></span></button></li>
+												<li><button class="button" style="font-size:40px;"><g:link url="/"><span style="color:#feff00"><< WEB3 NFT Mind Model</span></g:link></span></button></li>
 												 
 												
 											
@@ -228,7 +228,7 @@
 														<!-- Intro -->
 							<div class="row">
 						<div class="12u">
-						
+								<br><br><br><br>
 								<section>
 								
 								<div id="resizable" class="ui-widget-content" style="font-size:40px;">

@@ -223,7 +223,7 @@ function imageToGrayScale(elem){
 
 <ul>
 												<li><button class="button" style="font-size:65px;">Pixel 2.0 -- <g:link controller="product" action="model6"><span style="color:#D23B2A">WEB3 NFT Mind Model 6 >></span></g:link></span></button></li>
-												<br><br>
+												<li><button class="button" style="font-size:65px;"><g:link controller="product" action="model4"><span style="color:#D23B2A"><< WEB3 NFT Mind Model 4</span></g:link></span></button></li>
 												 
 												
 											
