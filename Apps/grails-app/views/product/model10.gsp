@@ -206,7 +206,6 @@ body{
   width: 300px;
   height: 300px; 
 }
-
 </style>
 <script src='https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js'></script>
 <script>
@@ -357,12 +356,12 @@ function createBelgianFlag(elem){
   img.drawTo(canvas);
 }
 
-function createBelgianFlag2(elem){
+function createBelgianFlag2(elem2){
 
 
-  var canvas = document.getElementById(elem);
-  var width = canvas.width;
-  var height = canvas.height;
+  var canvas = document.getElementById("myCanvas");
+  var width = 300;
+  var height = 300;
   var img = new SimpleImage(width,height);
   var ctx = canvas.getContext('2d');
   var bar1 = Math.round(width/3)
@@ -490,8 +489,8 @@ function imageToGrayScale(elem){
 								
 										<nav id="nav">
 											<ul>
-												<li><button class="button" style="font-size:65px;">Pixel 2.0 -- <g:link controller="product" action="model10"><span style="color:#feff00">WEB3 NFT Mind Model 10 >></span></g:link></span></button></li>
-												<li><button class="button" style="font-size:65px;"><g:link controller="product" action="model8"><span style="color:#feff00"><< WEB3 NFT Mind Model 8</span></g:link></span></button></li>
+												<li><button class="button" style="font-size:65px;">Pixel 2.0 -- <g:link controller="product" action="a"><span style="color:#feff00">WEB3 NFT Mind Model 11 >></span></g:link></span></button></li>
+												<li><button class="button" style="font-size:65px;"><g:link controller="product" action="model9"><span style="color:#feff00"><< WEB3 NFT Mind Model 9</span></g:link></span></button></li>
 												
 												
 											
@@ -511,9 +510,40 @@ function imageToGrayScale(elem){
 									<p>There are 4 quadrants. One is full, circle, triangle or square. The goal is to eventually be full. But for now, Choose One (circle, triangle or square):</p>
 									<input id='buttonCreateBelgianFlag' type='button' value='Draw Quadrants ...' onclick="createBelgianFlag('canvasBelgianFlag')">
 									
-									<p><canvas id='canvasBelgianFlag' class='canvasRoundCorders,card' onclick="createBelgianFlag2('canvasBelgianFlag')"></canvas></p>
+									<p><canvas id='canvasBelgianFlag' class='canvasRoundCorders,card' onclick="createBelgianFlag2('carvasBelgianFlag2')"></canvas></p>
 									
-									 
+									<p>
+									<canvas id="myCanvas" width="300" height="300"
+									style="border:1px solid #d3d3d3;" onclick="createBelgianFlag('myCanvas2')">
+									Your browser does not support the canvas element.
+									</canvas>
+									</p>
+									
+									<script>
+									var canvas = document.getElementById("myCanvas");
+									var ctx = canvas.getContext("2d");
+									ctx.beginPath();
+									ctx.arc(95,50,40,0,2*Math.PI);
+									ctx.stroke();
+									</script> 
+									<br><br>
+									
+									<p>
+									<canvas id="myCanvas2" width="300" height="300"
+									style="border:1px solid #d3d3d3;">
+									Your browser does not support the canvas element.
+									</canvas>
+									</p>
+									<script>
+									
+									var canvas = document.getElementById("myCanvas2");
+									var ctx = canvas.getContext("2d");
+									ctx.moveTo(0,0);
+									ctx.lineTo(200,100);
+									ctx.stroke();
+									
+									</script>
+									
 									</div>
 									  
 									  
