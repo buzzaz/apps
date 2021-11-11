@@ -523,14 +523,14 @@ function imageToGrayScale(elem){
 									var canvas = document.getElementById("myCanvas");
 									var ctx = canvas.getContext("2d");
 									ctx.beginPath();
-									ctx.arc(95,50,40,0,2*Math.PI);
+									ctx.arc(150,150,80,0,2*Math.PI);
 									ctx.stroke();
 									</script> 
 									<br><br>
 									
 									<p>Shapes are drawn as default matrix, quadrants override them.  
 									<canvas id="myCanvas2" width="300" height="300"
-									style="border:1px solid #d3d3d3;">
+									style="border:1px solid #d3d3d3;" onclick="createBelgianFlag('myCanvas3')">
 									Your browser does not support the canvas element.
 									</canvas>
 									</p>
@@ -539,8 +539,30 @@ function imageToGrayScale(elem){
 									var canvas = document.getElementById("myCanvas2");
 									var ctx = canvas.getContext("2d");
 									ctx.moveTo(0,0);
-									ctx.lineTo(200,100);
+									ctx.lineTo(300,300);
 									ctx.stroke();
+									
+									</script>
+									
+									<br><br>
+									
+									<p>Shapes are drawn as default matrix, quadrants override them.  
+									<canvas id="myCanvas3" width="300" height="300"
+									style="border:1px solid #d3d3d3;" onclick="createBelgianFlag('myCanvas2')">
+									Your browser does not support the canvas element.
+									</canvas>
+									</p>
+									<script>
+									
+									var canvas = document.getElementById("myCanvas3");
+									var ctx = canvas.getContext("2d");
+									var grd = ctx.createLinearGradient(0, 0, 200, 0);
+									grd.addColorStop(0, "red");
+									grd.addColorStop(1, "white");
+									
+									// Fill with gradient
+									ctx.fillStyle = grd;
+									ctx.fillRect(0, 0, 300, 300);
 									
 									</script>
 									
