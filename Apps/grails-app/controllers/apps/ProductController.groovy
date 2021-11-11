@@ -216,6 +216,16 @@ class ProductController {
 		log.info "inside model10"
 	}
 	
+	def model11() {
+		System.out.println("inside model11")
+		log.info "inside model11"
+	}
+	
+	def model12() {
+		System.out.println("inside model12")
+		log.info "inside model12"
+	}
+	
 	def b() {
 		System.out.println("inside b")
 		log.info "inside b"

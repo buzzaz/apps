@@ -489,8 +489,8 @@ function imageToGrayScale(elem){
 								
 										<nav id="nav">
 											<ul>
-												<li><button class="button" style="font-size:65px;">Pixel 2.0 -- <g:link controller="product" action="model11"><span style="color:#feff00">WEB3 NFT Mind Model 11 >></span></g:link></span></button></li>
-												<li><button class="button" style="font-size:65px;"><g:link controller="product" action="model9"><span style="color:#feff00"><< WEB3 NFT Mind Model 9</span></g:link></span></button></li>
+												<li><button class="button" style="font-size:65px;">Pixel 2.0 -- <g:link controller="product" action="model12"><span style="color:#feff00">WEB3 NFT Mind Model 12 >></span></g:link></span></button></li>
+												<li><button class="button" style="font-size:65px;"><g:link controller="product" action="model10"><span style="color:#feff00"><< WEB3 NFT Mind Model 10</span></g:link></span></button></li>
 												
 												
 											
@@ -505,66 +505,125 @@ function imageToGrayScale(elem){
 								<section>
 								<br><br>
 								<div class="demo" style="font-size:24px;">
-								<span style="font-size:45px;">Quadrants Programming Interface - Palette Testing - Nerve Optic and Sound</span>
+								
+								
+								<canvas id="canvas" width="300" height="300"
+style="background-color:#333">
+</canvas>
+<span style="font-size:45px;">Metaverse Programming Interface - Experience</span>
+<script>
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var radius = canvas.height / 2;
+ctx.translate(radius, radius);
+radius = radius * 0.90
+setInterval(drawClock, 1000);
+
+function drawClock() {
+  drawFace(ctx, radius);
+  drawNumbers(ctx, radius);
+  drawTime(ctx, radius);
+}
+
+function drawFace(ctx, radius) {
+  var grad;
+  ctx.beginPath();
+  ctx.arc(0, 0, radius, 0, 2*Math.PI);
+  ctx.fillStyle = 'white';
+  ctx.fill();
+  grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+  grad.addColorStop(0, '#333');
+  grad.addColorStop(0.5, 'white');
+  grad.addColorStop(1, '#333');
+  ctx.strokeStyle = grad;
+  ctx.lineWidth = radius*0.1;
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+  ctx.fillStyle = '#333';
+  ctx.fill();
+}
+
+function drawNumbers(ctx, radius) {
+  var ang;
+  var num;
+  ctx.font = radius*0.15 + "px arial";
+  ctx.textBaseline="middle";
+  ctx.textAlign="center";
+  for(num = 1; num < 13; num++){
+    ang = num * Math.PI / 6;
+    ctx.rotate(ang);
+    ctx.translate(0, -radius*0.85);
+    ctx.rotate(-ang);
+    ctx.fillText(num.toString(), 0, 0);
+    ctx.rotate(ang);
+    ctx.translate(0, radius*0.85);
+    ctx.rotate(-ang);
+  }
+}
+
+function drawTime(ctx, radius){
+    var now = new Date();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    //hour
+    hour=hour%12;
+    hour=(hour*Math.PI/6)+
+    (minute*Math.PI/(6*60))+
+    (second*Math.PI/(360*60));
+    drawHand(ctx, hour, radius*0.5, radius*0.07);
+    //minute
+    minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+    drawHand(ctx, minute, radius*0.8, radius*0.07);
+    // second
+    second=(second*Math.PI/30);
+    drawHand(ctx, second, radius*0.9, radius*0.02);
+}
+
+function drawHand(ctx, pos, length, width) {
+    ctx.beginPath();
+    ctx.lineWidth = width;
+    ctx.lineCap = "round";
+    ctx.moveTo(0,0);
+    ctx.rotate(pos);
+    ctx.lineTo(0, -length);
+    ctx.stroke();
+    ctx.rotate(-pos);
+}
+</script>
+							
+							<br><br>	
+ <span style="font-size:45px;">Game Play - Be mindful of the clock on every action.</span>
  
-									<p>There are 4 quadrants. One is full, circle, triangle or square. The goal is to eventually be full. But for now, lets begin the Pixel Journey. Draw the quadrants:</p>
-									<input id='buttonCreateBelgianFlag' type='button' value='Draw Quadrants - Press This Button' onclick="createBelgianFlag('canvasBelgianFlag')">
-									
-									<p>By Clicking on the Button, our Javascript API is called, to draw the 3D image. <canvas id='canvasBelgianFlag' class='canvasRoundCorders,card' onclick="createBelgianFlag2('carvasBelgianFlag2')"></canvas></p>
-									
-									<p>Once the quadrant pixel is drawn, Click on the quadrant, please. 
-									<canvas id="myCanvas" width="300" height="300"
-									style="border:1px solid #d3d3d3;" onclick="createBelgianFlag('myCanvas2')">
-									Your browser does not support the canvas element.
-									</canvas>
-									</p>
-									
-									<script>
-									var canvas = document.getElementById("myCanvas");
-									var ctx = canvas.getContext("2d");
-									ctx.beginPath();
-									ctx.arc(150,150,80,0,2*Math.PI);
-									ctx.stroke();
-									</script> 
-									<br><br>
-									
-									<p>Shapes are drawn as default matrix, quadrants override them.  
-									<canvas id="myCanvas2" width="300" height="300"
-									style="border:1px solid #d3d3d3;" onclick="createBelgianFlag('myCanvas3')">
-									Your browser does not support the canvas element.
-									</canvas>
-									</p>
-									<script>
-									
-									var canvas = document.getElementById("myCanvas2");
-									var ctx = canvas.getContext("2d");
-									ctx.moveTo(0,0);
-									ctx.lineTo(300,300);
-									ctx.stroke();
-									
-									</script>
-									
-									<br><br>
-									
-									<p>Shapes are drawn as default matrix, quadrants override them.  
-									<canvas id="myCanvas3" width="300" height="300"
-									style="border:1px solid #d3d3d3;" onclick="createBelgianFlag('myCanvas2')">
-									Your browser does not support the canvas element.
-									</canvas>
-									</p>
-									<script>
-									
-									var canvas = document.getElementById("myCanvas3");
-									var ctx = canvas.getContext("2d");
-									var grd = ctx.createLinearGradient(0, 0, 200, 0);
-									grd.addColorStop(0, "red");
-									grd.addColorStop(1, "white");
-									
-									// Fill with gradient
-									ctx.fillStyle = grd;
-									ctx.fillRect(0, 0, 300, 300);
-									
-									</script>
+<svg width="100%" height="300px">
+<g id="R1" transform="translate(250 250)"> 
+  <ellipse rx="100" ry="0" opacity=".3">
+  <animateTransform attributeName="transform" type="rotate" dur="7s" from="0" to="360" repeatCount="indefinite" />
+  <animate attributeName="cx" dur="8s" values="-20; 220; -20" repeatCount="indefinite" />
+  <animate attributeName="ry" dur="3s" values="10; 60; 10" repeatCount="indefinite" />
+  </ellipse>
+</g>
+<use xlink:href="#R1" transform="rotate(72 390 150)" />
+<use xlink:href="#R1" transform="rotate(144 390 150)" />
+<use xlink:href="#R1" transform="rotate(216 390 150)" />
+<use xlink:href="#R1" transform="rotate(288 390 150)" />
+</svg>
+
+<span style="font-size:45px;">Game Play - Feel the images in rotation, Click for adventure.</span>
+
+<svg width="800" height="800">
+  <rect x="10" y="20" width="900" height="600">
+    <animate id="a1" attributeName="fill" from="red" to="blue" dur="3s" fill="freeze" />
+  </rect>
+  <rect x="10" y="120" width="900" height="600">
+    <animate id="a2" attributeName="fill" from="blue" to="yellow" begin="a1.end" dur="3s" fill="freeze" />
+  </rect>
+  <rect x="10" y="220" width="900" height="600">
+    <animate id="a3" attributeName="fill" from="yellow" to="green" begin="a2.end" dur="3s" fill="freeze" />
+  </rect>
+  Sorry, your browser does not support inline SVG.  
+</svg>
 									
 									</div>
 									  
