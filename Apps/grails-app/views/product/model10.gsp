@@ -505,14 +505,14 @@ function imageToGrayScale(elem){
 								<section>
 								<br><br>
 								<div class="demo" style="font-size:24px;">
-								Quadrants Programming Interface - Palette Testing - Nerve Optic and Sound
+								<span style="font-size:45px;">Quadrants Programming Interface - Palette Testing - Nerve Optic and Sound</span>
  
-									<p>There are 4 quadrants. One is full, circle, triangle or square. The goal is to eventually be full. But for now, Choose One (circle, triangle or square):</p>
-									<input id='buttonCreateBelgianFlag' type='button' value='Draw Quadrants ...' onclick="createBelgianFlag('canvasBelgianFlag')">
+									<p>There are 4 quadrants. One is full, circle, triangle or square. The goal is to eventually be full. But for now, lets begin the Pixel Journey. Draw the quadrants:</p>
+									<input id='buttonCreateBelgianFlag' type='button' value='Draw Quadrants - Press This Button' onclick="createBelgianFlag('canvasBelgianFlag')">
 									
-									<p><canvas id='canvasBelgianFlag' class='canvasRoundCorders,card' onclick="createBelgianFlag2('carvasBelgianFlag2')"></canvas></p>
+									<p>By Clicking on the Button, our Javascript API is called, to draw the 3D image. <canvas id='canvasBelgianFlag' class='canvasRoundCorders,card' onclick="createBelgianFlag2('carvasBelgianFlag2')"></canvas></p>
 									
-									<p>
+									<p>Once the quadrant pixel is drawn, Click on the quadrant, please. 
 									<canvas id="myCanvas" width="300" height="300"
 									style="border:1px solid #d3d3d3;" onclick="createBelgianFlag('myCanvas2')">
 									Your browser does not support the canvas element.
@@ -528,7 +528,7 @@ function imageToGrayScale(elem){
 									</script> 
 									<br><br>
 									
-									<p>
+									<p>Shapes are drawn as default matrix, quadrants override them.  
 									<canvas id="myCanvas2" width="300" height="300"
 									style="border:1px solid #d3d3d3;">
 									Your browser does not support the canvas element.
